@@ -197,4 +197,39 @@
 
 <style> body,html {min-height:100vh; height:100%;overflow:auto;} 
 </style>
+
+<!-- bootstrap -->
+  <script type="module">
+     import { di_initParticles } from 'https://kodux78k.github.io/oiDual-ParTKlz/oiDual-ParTKlz.js';
+
+    // init imediato só pra preview (override minimal)
+di_initParticles({
+  di_target: 'particles-js',
+  di_config: {
+    particles: {
+      number: { value: 24 },
+
+      color: {
+        value: ['#0ff', '#f0f']
+      },
+
+      shape: { type: 'circle' },
+      opacity: { value: 0.8 },
+      size: { value: 2.4 },
+
+      line_linked: {
+      enable: true,
+      distance: 150,
+      color: '#ffffff',
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.5
+      }
+    }
+  }
+});
+  </script>
 </body></html>
